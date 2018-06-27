@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="LDLucien" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">LD</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/LDLucien" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="SDN设计实验——链路故障恢复功能的设计与实现"><a href="#SDN设计实验——链路故障恢复功能的设计与实现" class="headerlink" title="SDN设计实验——链路故障恢复功能的设计与实现"></a>SDN设计实验——链路故障恢复功能的设计与实现</h1><h2 id="一-实验内容"><a href="#一-实验内容" class="headerlink" title="一. 实验内容"></a>一. 实验内容</h2><p>在基于最短路径查找的网络拓扑基础之上，开发应用实现基于SDN网络的链路故障恢复功能。活动图如下所示。</p>
+<p><img src="C:\Users\LDLuc\AppData\Local\Temp\1529857651640.png" alt="1529857651640"></p>
+<h2 id="二-实验要求"><a href="#二-实验要求" class="headerlink" title="二. 实验要求"></a>二. 实验要求</h2><h4 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h4><p>在链路故障后，使用最短路径算法来选取新的传输路径。</p>
+<h4 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h4><p>在网络中所有链路均正常的情况下，h1到h2的传输路径为h1-&gt;s1-&gt;s4-&gt;s5-&gt;h2。假设此时s1-&gt;s2的链路发生故障断开连接，那么此时路径 h1-&gt;s1-&gt;s4-&gt;s5-&gt;h2 便不再可行。为了保证主机 h1 和 h2 之间的正常通信需要查找新的路径。本题的主要任务就是编写代码，实现在链路故障发生时，实现主机之间通过新的路径传输数据。即在图 1 的拓扑中，当 s1 和 s4 之间断开连接时，h1 和 h2 会及时发现链路故障，同时及时查找出新的路径h1-&gt;s1-&gt;s4-&gt;s5-&gt;h2，通过新路径传输数据。</p>
+<h2 id="三-实验说明"><a href="#三-实验说明" class="headerlink" title="三. 实验说明"></a>三. 实验说明</h2><h4 id="3-1-构建拓扑"><a href="#3-1-构建拓扑" class="headerlink" title="3.1 构建拓扑"></a>3.1 构建拓扑</h4><p>按照题目要求，通过编写相应的 python 代码建立如图所示的拓扑图。</p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180623212814.png" alt=""></p>
+<p>拓扑结构的Python代码如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class MyTopo( topo ):</span><br><span class="line"></span><br><span class="line">	def __init__( self ):</span><br><span class="line">		</span><br><span class="line">		Topo.__init__( self )</span><br><span class="line">		</span><br><span class="line">		leftHost = self.addHost( &apos;h1&apos; )</span><br><span class="line">		rightHost = self.addHost( &apos;h2&apos; )</span><br><span class="line">		Switch1 = self.addSwitch( &apos;s1&apos; )</span><br><span class="line">		Switch2 = self.addSwitch( &apos;s2&apos; )</span><br><span class="line">		Switch3 = self.addSwitch( &apos;s3&apos; )</span><br><span class="line">		Switch4 = self.addSwitch( &apos;s4&apos; )</span><br><span class="line">		Switch5 = self.addSwitch( &apos;s5&apos; )</span><br><span class="line">		</span><br><span class="line">		self.addLink( leftHost, Switch1 )</span><br><span class="line">		self.addLink( Switch1, Switch2 )</span><br><span class="line">		self.addLink( Switch2, Switch3 )</span><br><span class="line">		self.addLink( Switch1, Switch4 )</span><br><span class="line">		self.addLink( Switch3, Switch5 )</span><br><span class="line">		self.addLink( Switch4, Switch5 )</span><br><span class="line">		self.addLink( Switch5, rightHost )</span><br></pre></td></tr></table></figure>
+<h4 id="3-2-运行程序"><a href="#3-2-运行程序" class="headerlink" title="3.2 运行程序"></a>3.2 运行程序</h4><p>​    3.2.1 Ryu应用开发</p>
+<p>​    将链路恢复的需要修改的代码编写在 ryu/ryu/app 目录下，其中删除和匹配函数如下所示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">def delete_flow(self, dst_port=None, datapath =None):</span><br><span class="line">    ofp=datapath.ofproto</span><br><span class="line">    parser=datapath.ofproto_parser</span><br><span class="line"></span><br><span class="line">    cookie=0</span><br><span class="line">    cookie_mask=0</span><br><span class="line">    table_id=0</span><br><span class="line">    idle_timeout=5</span><br><span class="line">    hard_timeout=0</span><br><span class="line">    priority=1</span><br><span class="line">    buffer_id=ofp.OFP_NO_BUFFER</span><br><span class="line">    inst = []</span><br><span class="line">    req = parser.OFPFlowMod(datapath, cookie, cookie_mask,</span><br><span class="line">                                   table_id, ofp.OFPFC_DELETE,</span><br><span class="line">                                   idle_timeout, hard_timeout,</span><br><span class="line">                                   priority, buffer_id,</span><br><span class="line">                                   dst_port, ofp.OFPG_ANY,</span><br><span class="line">                                   ofp.OFPFF_SEND_FLOW_REM,</span><br><span class="line">                                   None, inst)</span><br><span class="line">    datapath.send_msg(req)</span><br><span class="line"></span><br><span class="line">@set_ev_cls(ofp_event.EventOFPPortStatus, [CONFIG_DISPATCHER, MAIN_DISPATCHER, DEAD_DISPATCHER, HANDSHAKE_DISPATCHER])</span><br><span class="line">def get_OFPPortStatus_msg(self, ev):</span><br><span class="line">    msg=ev.msg</span><br><span class="line">    datapath=msg.datapath</span><br><span class="line">    dport=msg.desc.port_no</span><br><span class="line">    ofproto=datapath.ofproto</span><br><span class="line"></span><br><span class="line">    if msg.reason == ofproto.OFPPR_MODIFY:</span><br><span class="line">        self.delete_flow(dst_port=dport, datapath=datapath)</span><br></pre></td></tr></table></figure>
+<p>​    主要函数介绍</p>
+<p>​    1) delete_flow</p>
+<p>​    删除交换机的流表项。</p>
+<p>​    2) get_OFPPortStatus_msg(self, ev)</p>
+<p>​    获取端口信息，一旦发生链路故障，获取发生故障的交换机的端口信息，然后调用 delete_flow 函数，删除这些交换机的流表信息。在本例中如果发生了故障，那么链路的端口号就会不断递减，递减的端口号到某一值会与该函数匹配，将该条链路发送到链路删除函数中进行删除。</p>
+<p>​    </p>
+<p>​    3.2.2 启动Ryu控制器</p>
+<p>​    <code>ryu-manager ryu/ryu/app/failure_recovery.py --ofp-tcp-listen-port 6633 --observe-links</code></p>
+<p><img src="C:\Users\LDLuc\AppData\Local\Temp\1529855945810.png" alt="1529855945810"></p>
+<p>​    </p>
+<p>​    3.2.3 启动mininet</p>
+<p>​    运行程序 运行程序序 故障恢复程序 failure_recovery.py</p>
+<p>​    <code>sudo mn --switch ovs,protocols=OpenFlow13--controller=remote,ip=127.0.0.1,port=6633 --custom mininet/custom/mytopo.py --topo mytopo</code></p>
+<p><img src="C:\Users\LDLuc\AppData\Local\Temp\1529856089551.png" alt="1529856089551"></p>
+<h4 id="3-3-结果验证"><a href="#3-3-结果验证" class="headerlink" title="3.3 结果验证"></a>3.3 结果验证</h4><p>在 mininet 终端输入命令 xterm h1 h2，开启主机 h1、h2 的终端界面。</p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625000512.png" alt=""></p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625000526.png" alt=""></p>
+<p>通过 iperf 指令在 h1 和 h2 直接进行 udp 数据包传输，h1 终端（作客户端）：</p>
+<p><code>iperf -c 10.0.0.2  -u -b 5M -i 0.5 -t1000</code></p>
+<p>h2 终端（作服务器端）：<code>iperf -s -u -i 0.5</code></p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625000622.png" alt=""></p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625000632.png" alt=""></p>
+<p>此时的路径信息为</p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625000746.png" alt=""></p>
+<p>此时查看流表信息</p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625000844.png" alt=""></p>
+<p>在 mininet 终端输入指令 link s1 s4 down, 将 s1 和 s4 之间的链路断开。 </p>
+<p><img src="C:\Users\LDLuc\Desktop\微信截图_20180625001005.png" alt=""></p>
+<p>在 Ryu 终端处观察到，在断开链路后，路径发生了变化，传输路径变为s1-&gt;s2-&gt;s3-&gt;s5。</p>
+<p><img src="C:\Users\LDLuc\AppData\Local\Temp\1529856657373.png" alt="1529856657373"></p>
+<p>此时查看流表信息</p>
+<p><img src="C:\Users\LDLuc\AppData\Local\Temp\1529856706431.png" alt="1529856706431"></p>
+<p>通过流表信息也可以进一步确定，在 s1 和 s4 之间发生链路故障后，重新选取了路径。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/06/27/SDN设计实验/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/06/27/SDN设计实验/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
